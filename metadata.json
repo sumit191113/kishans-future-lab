@@ -1,0 +1,6 @@
+{
+  "name": "Kishan's Future Lab",
+  "description": "Kishan Maurya's premium daily growth dashboard focusing on essential learning, coding milestones, AI prompting skills, business logic, typing speed practice, and consistency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
