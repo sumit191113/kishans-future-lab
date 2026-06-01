@@ -1,0 +1,5 @@
+# Robots.txt for Kishan's Future Lab
+User-agent: *
+Allow: /
+
+Sitemap: https://kishansfuturelab.vercel.app/sitemap.xml

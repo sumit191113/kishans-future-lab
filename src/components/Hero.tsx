@@ -39,12 +39,12 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, streakCount }) => {
             </div>
 
             {/* Display Headline */}
-            <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+            <h2 className="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
               Engineering The <br />
               <span className="bg-gradient-to-r from-brand-cyan via-brand-purple to-brand-rose bg-clip-text text-transparent">
                 Next-Gen Self
               </span>
-            </h1>
+            </h2>
 
             {/* Lucid Subtitle */}
             <p className="text-lg sm:text-xl text-gray-400 max-w-xl font-normal leading-relaxed">

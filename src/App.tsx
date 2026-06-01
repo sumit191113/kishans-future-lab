@@ -1097,6 +1097,7 @@ export default function App() {
                           onClick={() => handleDeletePrompt(p.id)}
                           className="text-slate-500 hover:text-red-400 p-1 rounded hover:bg-slate-900 cursor-pointer"
                           title="Delete Prompt"
+                          aria-label="Delete Prompt"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
@@ -1213,6 +1214,7 @@ export default function App() {
                           onClick={() => handleDeleteIdea(i.id)}
                           className="text-slate-500 hover:text-red-400 p-1 rounded hover:bg-slate-900 cursor-pointer"
                           title="Delete Idea"
+                          aria-label="Delete Idea"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                         </button>
@@ -1565,6 +1567,7 @@ export default function App() {
                             onClick={(e) => handleDeleteThread(thread.id, e)}
                             className="opacity-100 lg:opacity-0 lg:group-hover:opacity-100 text-slate-500 hover:text-red-400 p-1 rounded transition-opacity duration-150 absolute right-1.5 top-1/2 -translate-y-1/2 cursor-pointer"
                             title="Purge Channel"
+                            aria-label="Purge Chat Channel"
                           >
                             <Trash2 className="w-3.5 h-3.5" />
                           </button>
@@ -1758,13 +1761,16 @@ export default function App() {
       </main>
 
       {/* FOOTER */}
-      <footer className="bg-[#02040b] border-t border-blue-950/40 py-8 text-center text-xs mt-16 font-mono text-slate-500">
+      <footer className="bg-[#02040b] border-t border-blue-950/40 py-10 text-center text-xs mt-16 font-mono text-slate-500" aria-label="Footer Area">
         <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center gap-2">
-          <p className="text-[11px] text-slate-400">
-            Kishan Maurya | Learning Every Day
+          <p className="text-[12px] font-semibold text-slate-350 max-w-sm mb-1 leading-relaxed">
+            &ldquo;Roz thoda seekho, ek din bahut aage pahunch jaoge.&rdquo;
           </p>
-          <p className="text-xs text-white hover:text-blue-400 transition-colors duration-200 mt-1">
-            Created by <span className="font-semibold">Kishan Maurya</span>
+          <p className="text-xs text-white hover:text-blue-400 transition-colors duration-200">
+            Created by <span className="font-semibold text-blue-400">Kishan Maurya</span>
+          </p>
+          <p className="text-[11px] text-slate-400 mt-0.5">
+            Kishan&apos;s Future Lab &mdash; Learning Every Day, Building My Future
           </p>
           <p className="text-[10px] text-slate-600 mt-1">
             © {new Date().getFullYear()} Kishan&apos;s Future Lab • Absolute Consistency Grid
