@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
-// @ts-expect-error - Static image asset compiled by Vite
-import logoImage from './assets/images/future_lab_logo_1780048057653.png';
+import { FutureLabLogo } from './components/FutureLabLogo';
 import { 
   Languages, 
   Code2, 
@@ -666,12 +665,7 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-[#030612]/85 backdrop-blur-md border-b border-blue-950/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img 
-              src={logoImage} 
-              alt="Kishan's Future Lab Logo" 
-              className="w-10 h-10 rounded-lg object-contain bg-black shadow-md shadow-blue-950/40 border border-blue-900/30"
-              referrerPolicy="no-referrer"
-            />
+            <FutureLabLogo className="w-10 h-10" />
             <span className="font-semibold tracking-tight text-white sm:text-lg">
               Kishan&apos;s Future Lab
             </span>

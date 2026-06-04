@@ -145,4 +145,34 @@
   color: #e2e8f0;
 }
 
+/* Futuristic Logo Orbit Keys */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  transform-origin: 50px 50px;
+  animation: spin-slow 24s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  transform-origin: 50px 50px;
+  animation: spin-slow-reverse 18s linear infinite;
+}
+
+
 
